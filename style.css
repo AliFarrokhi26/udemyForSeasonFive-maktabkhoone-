@@ -1,0 +1,220 @@
+@media screen and (max-width:768px){
+    body{
+        margin: 0;
+        padding: 0;
+        /* background-color: pink; */
+    }
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-phone{
+        width: 100%;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: rgb(163, 163, 163); */
+    }
+    /* .right-side,.left-side,.middle-side{
+        border: 1px solid blue;
+    } */
+    .right-side{
+        margin-left: 10px;
+    }
+    .left-side{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        margin-right: 10px;
+        /* border: 1px solid blue; */
+    }
+    .navbar-phone img{
+        height: 28px;
+        width: 75px;
+    }
+    .main-part-one{
+
+    }
+    .banner-phone img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .banner-info {
+        margin: 25px;
+    }
+    .banner-info p {
+        font-size: small;
+        line-height: 20px;
+        font-family: "Roboto",sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .banner-title h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 27px;
+    }
+    .banner-phone span{
+        color: #A435F0;
+    }
+    .banner-buttons{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-top: 15px;
+        /* border: 1px solid blue; */
+    }
+    .banner-buttons button{
+        padding: 10px;
+        width: 50%;
+        height: 40px;
+        border: none;
+        border: 1px solid #2D2F31 ;
+
+    }
+    .banner-buttons button:first-child{
+        color: white;
+        background-color: rgba(45, 47, 49, 1);
+        &:hover{
+            background-color: rgba(45, 47, 49, .8);
+        }
+    }
+    .banner-buttons button:hover{
+        background-color: rgba(45, 47, 49, .2);
+    }
+    .banner-info button{
+        font-family: "Roboto",sans-serif;
+        font-weight: 600;
+        font-style: bold;
+    }
+
+/* ---------become an instructor------------------ */
+.become-an-instructor{
+    font-size: small;
+    line-height: 20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 100px;
+    border: 1px solid red;
+}
+.become-an-instructor .text-container h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+}
+.become-an-instructor .pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.become-an-instructor .text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2px;
+}
+
+.become-an-instructor .text-container button{
+    color: white;
+    border: none;
+    border: 1px solid black;
+    padding: 5px 15px;
+    background-color: rgba(45, 47, 49, 1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+    &:hover{
+        background-color: rgba(45, 47, 49, .8);
+    }
+}
+
+}
+
+
+
+/* ------------------------------- */
+@media screen and (min-width:768px){
+    .navbar-phone {
+        display: none;
+    }
+    .banner-phone{
+        display: none;
+    }
+    .navbar-desktop{
+        width: 100%;
+        height: 48px;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* border: 1px solid blue; */
+    }
+    .logo-desktop{
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-list-desktop{
+        width: 75%;
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .navbar-is-signin{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navbar-desktop img{
+        height: 28px;
+        width: 75px;
+    }
+    .navbar-list-desktop ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        gap: 50px;
+    }
+    .navbar-is-signin button{
+        border: none;
+        border: 1px solid black;
+        background-color: white;
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .navbar-is-signin button:first-child{
+        
+        &:hover{
+            background-color: rgba(45, 47, 49, .2);
+        }
+
+    }
+    .navbar-is-signin button:nth-child(2){
+        color: white;
+        background-color: #2d2f31;
+        &:hover{
+            opacity: 85%;
+        }
+    }
+    .navbar-is-signin button:last-child{
+        
+        &:hover{
+            background-color: rgba(45, 47, 49, .2);
+        }
+    }
+
+    
+}
