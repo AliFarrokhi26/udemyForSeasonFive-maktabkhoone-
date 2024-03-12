@@ -4,6 +4,23 @@
         padding: 0;
         /* background-color: pink; */
     }
+    p, ul li{
+        font-size: small;
+        font-family: "Roboto",sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 27px;
+    }
+    button{
+        border: none;
+        font-family: "Roboto",sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 16px;
+    }
     .navbar-desktop{
         display: none;
     }
@@ -15,9 +32,7 @@
         align-items: center;
         /* background-color: rgb(163, 163, 163); */
     }
-    /* .right-side,.left-side,.middle-side{
-        border: 1px solid blue;
-    } */
+
     .right-side{
         margin-left: 10px;
     }
@@ -33,31 +48,14 @@
         height: 28px;
         width: 75px;
     }
-    .main-part-one{
-
-    }
     .banner-phone img {
         width: 100%;
-        height: 350px;
+        height: 250px;
         object-fit: cover;
         object-position: center;
     }
     .banner-info {
         margin: 25px;
-    }
-    .banner-info p {
-        font-size: small;
-        line-height: 20px;
-        font-family: "Roboto",sans-serif;
-        font-weight: 300;
-        font-style: normal;
-    }
-    .banner-title h1{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 27px;
-    }
-    .banner-phone span{
-        color: #A435F0;
     }
     .banner-buttons{
         display: flex;
@@ -67,10 +65,9 @@
         /* border: 1px solid blue; */
     }
     .banner-buttons button{
-        padding: 10px;
+        padding: 10px 5px;
         width: 50%;
         height: 40px;
-        border: none;
         border: 1px solid #2D2F31 ;
 
     }
@@ -84,25 +81,70 @@
     .banner-buttons button:hover{
         background-color: rgba(45, 47, 49, .2);
     }
-    .banner-info button{
-        font-family: "Roboto",sans-serif;
-        font-weight: 600;
-        font-style: bold;
-    }
+   
 
-/* ---------become an instructor------------------ */
-.become-an-instructor{
-    font-size: small;
-    line-height: 20px;
-    font-family: "Roboto",sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    margin-bottom: 100px;
+/* ? ---------Udemy business------------------ */
+.ub-pic-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 1px solid red;
 }
+.ub-pic-container img:first-child{
+
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: top;
+
+}
+.ub-pic-container img:last-child{
+    width: 40%;
+    margin: 15px 0;
+    border: 1px solid blue;
+}
+
+.ub-info-container{
+    border: 1px solid green;
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ub-info-container h1{
+    text-align: center;
+}
+.ub-info-container ul li{
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.ub-button-container button{
+    color: white;
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: rgba(45, 47, 49, 1);
+    margin-bottom: 10px;
+    &:hover{
+        background-color: rgba(45, 47, 49, .8);
+    }
+}
+.ub-button-container :last-child{
+    background-color: white;
+    color: black;
+    &:hover{
+        border: 1px solid rgba(45, 47, 49, 1);
+        background-color: rgba(45, 47, 49, .2);
+    }
+}
+
+
+/*? ---------become an instructor------------------ */
+.become-an-instructor{
+    margin-bottom: 100px;
+}
 .become-an-instructor .text-container h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 27px;
 }
 .become-an-instructor .pic-container{
     display: flex;
@@ -120,26 +162,24 @@
 
 .become-an-instructor .text-container button{
     color: white;
-    border: none;
     border: 1px solid black;
-    padding: 5px 15px;
+    padding: 15px 20px;
     background-color: rgba(45, 47, 49, 1);
     margin-top: 10px;
     margin-bottom: 10px;
-    font-family: "Roboto",sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    
     &:hover{
         background-color: rgba(45, 47, 49, .8);
     }
 }
 
-}
-
-
-
-/* ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
+/* ! ------------------------------- */
 @media screen and (min-width:768px){
     .navbar-phone {
         display: none;
@@ -217,4 +257,4 @@
     }
 
     
-}
+}}
