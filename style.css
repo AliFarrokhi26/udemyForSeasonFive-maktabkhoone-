@@ -4,7 +4,7 @@
         padding: 0;
         /* background-color: pink; */
     }
-    p, ul li{
+    p, ul li.a{
         font-size: small;
         font-family: "Roboto",sans-serif;
         font-weight: 300;
@@ -13,6 +13,10 @@
     h1{
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 27px;
+    }
+    h4{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
     }
     button{
         border: none;
@@ -119,13 +123,23 @@
     font-weight: 400;
     margin-bottom: 10px;
 }
-
+.ub-button-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    /* border: 1px solid red; */
+}
 .ub-button-container button{
     color: white;
     border: 1px solid black;
     padding: 10px 20px;
+    width: 50%;
+    height: 100%;
     background-color: rgba(45, 47, 49, 1);
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     &:hover{
         background-color: rgba(45, 47, 49, .8);
     }
@@ -139,6 +153,119 @@
     }
 }
 
+
+/*? ---------quote container------------------ */
+.quote-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f2f4;
+    /* border: 1px solid red; */
+}
+.quote-box{
+    width: 90%;
+    height:300px ;
+    display: flex;
+    margin-top: 50px;
+    background-color: #fff;
+    /* border: 1px solid #9da3a7; */
+    box-shadow: 0 0 2px #9da3a7;
+}
+.quote-side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* border: 1px solid black; */
+}
+.quote-logo{
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* border: 1px dotted red; */
+}
+.quote-logo img{
+    height: 30%;
+}
+.quote{
+    height: 60%;
+    /* border: 1px dotted blue; */
+}
+.quote P{
+    margin-top: 0;
+    font-weight: 400;
+    font-style: bold;
+    font-size:15px;
+    line-height: 20px;
+}
+.quote span{
+    font-weight: 700;
+    font-size:15px;
+}
+
+.read-full-story {
+   height: 20%;
+   display: flex;
+   align-items: top;
+   /* border: 1px dotted blue; */
+}
+.read-full-story a{
+    color: #5624d0;
+    font-family: "Roboto",sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.profile-side{
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+.profile-side .profile-pic{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+.profile-side .profile-pic img{
+    border-radius: 50%;
+    padding: 15px;
+}
+.person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    /* border: 1px solid red; */
+}
+.person-info p{
+    margin: 0;
+    line-height: 19px;
+}
+.person-info p:last-child{
+    margin-top: 15px;
+}
+.person-info h4{
+    margin:0;
+    font-family: "Roboto",sans-serif;
+    margin-top: 15px;
+
+}
+
+.more-costumer-story{
+    margin-top: 20px;
+    width: 90%;
+    height:50px ;
+    /* border: 1px solid green; */
+}
+.more-costumer-story a{
+    color: #5624d0;
+    font-family: "Roboto",sans-serif;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    /* border: 1px solid red; */
+}
 
 /*? ---------become an instructor------------------ */
 .become-an-instructor{
