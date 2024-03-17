@@ -642,6 +642,41 @@
         margin-top: 50px;
         flex-wrap: wrap;
     }
+ /* ? ----------------------courses-------------------- */
+    .courses-main-container{
+      margin: 0 50px;
+      padding-bottom: 25px;
+      /* border: 1px solid red; */
+    }
+    .courses-list{
+      display: flex;
+      justify-content:space-between;
+      box-shadow: 0 0 5px #9da3a7;
+      padding: 25px;
+    }
+    .card{
+      height: 100%;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-shadow: 0 0 5px #9da3a7;
+      /* border: 1px solid red; */
+      &:hover{
+         cursor: pointer;
+      }
+    }
+    .card h3{
+      margin: 0;
+      margin-top: 15px;
+      font-size: 16px;
+    }
+    .card h3:nth-child(4){
+      /* border: 1px solid red; */
+      /* color: blue; */
+      margin-bottom: 10px;
+    }
+   
 
  /*? ---------------------category------------------- */
     .category-main-container{
