@@ -28,12 +28,16 @@
     .navbar-desktop{
         display: none;
     }
+    .banner-desktop{
+      display: none;
+    }
     .navbar-phone{
         width: 100%;
         height: 48px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        cursor: pointer;
         /* background-color: rgb(163, 163, 163); */
     }
 
@@ -86,6 +90,10 @@
         background-color: rgba(45, 47, 49, .2);
     }
  /* ?---------------------trust worthy------------------- */
+    .trust-worthy{
+      background-color: #f1f2f4;
+      padding: 10px 0;
+    }
     .tw-main-container{
         display: flex;
         justify-content: center;
@@ -111,6 +119,28 @@
         flex-wrap: wrap;
     }
 
+ /*? ---------------------course------------------- */
+    .courses{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    .courses-list{
+      /* border: 1px solid red; */
+      width: 240px;
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      box-shadow: 0 0 5px #9da3a7;
+    }
+    .card{
+      width: 240px;
+      padding: 10px;
+      box-shadow: 0 0 5px #9da3a7;
+    }
  /*? ---------------------category------------------- */
     .category-main-container{
         background-color: #f1f2f4;
@@ -472,6 +502,7 @@
     .banner-phone{
         display: none;
     }
+    
     body{
         margin: 0;
         padding: 0;
@@ -506,7 +537,9 @@
         align-items: center;
         gap: 10px;
         margin-bottom: 10px;
-        border-bottom: 1px solid #9da3a7;
+        /* border-bottom: 1px solid #9da3a7; */
+        box-shadow: 0 1px 5px #9da3a7;
+
          /* border: 1px solid blue;  */
     }
     .logo-desktop{
@@ -534,15 +567,18 @@
     .navbar-list-desktop ul{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         list-style: none;
         gap: 50px;
+        font-weight: bold;
+        cursor: pointer;
+
     }
     .navbar-is-signin button{
         border: none;
         border: 1px solid black;
         background-color: white;
-        padding: 10px 15px;
+        padding: 5px 10px;
         font-weight: bold;
         font-size: 16px;
         cursor: pointer;
